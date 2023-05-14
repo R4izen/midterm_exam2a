@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriwearther', sans-serif;
+}
+h1 {
+    margin-top: 0;
+    font-family: 'Sacramento', cursive;
+}
+.top-container {
+    background-color: black;
+    position: relative;
+    padding: 100px;
+}
+.top-pic{
+    position: absolute;
+    right: 100px;
+    top: 50px;
+}
+.bottom-pic{
+    position: absolute;
+    left: 100px;
+    top: 50px;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-form{
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form input[type="text"],
+.contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: vertical;
+}
+.contact-form input[type="submit"]{
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.contact-form input[type="submit"]:hover{
+    background-color: #45a049;
+}
+a{
+    position: fixed;
+    right: 50px;
+    color: white;
+}
+.circle-icon{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden; 
+}

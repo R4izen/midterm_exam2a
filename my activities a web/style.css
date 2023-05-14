@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    text-align: center;
+}
+.top-container{
+    background-color: #e4f9f5;
+    position: relative;
+    padding: 100px;
+}
+h1 {
+    margin: 0 auto 0 auto;
+    margin-top: 0;
+    width: 8%;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(13, 65, 60); 
+}
+.top-cloud{
+    position:absolute;
+    right: 300px;
+    top: 50px;
+}
+.bottom-cloud{
+    position:absolute;
+    left: 300px;
+    bottom: 400px;
+}
+.pic{
+    margin-top: 0px;
+    width: 250px;
+    height: 250px;
+    border-radius: 400px;
+}
+.skill1{
+    margin-top: 0px;
+    width: 250px;
+    height: 250px;
+
+}
+.skill2{
+    margin-top: 0px;
+    width: 250px;
+    height: 250px;
+
+}

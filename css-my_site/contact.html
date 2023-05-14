@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imagesforport/code (2).png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,700" rel="stylesheet">
+    <title>Contact</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 20px;
+        }
+        
+        header {
+          text-align: center;
+          margin-bottom: 40px;
+        }
+        
+        h1 {
+          color: #333;
+          font-size: 28px;
+          margin: 0;
+        }
+        
+        main {
+          max-width: 800px;
+          margin: 0 auto;
+        }
+        
+        form {
+          background-color: #f5f5f5;
+          padding: 20px;
+          border-radius: 5px;
+        }
+        
+        label {
+          display: block;
+          margin-bottom: 10px;
+          color: #333;
+        }
+        
+        input[type="text"],
+        textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          resize: none;
+        }
+        input[type="email"],
+        textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          resize: none;
+        }
+        
+        input[type="submit"] {
+          background-color: #333;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 3px;
+          cursor: pointer;
+        }
+        
+        footer {
+          text-align: center;
+          margin-top: 40px;
+          color: #888;
+          font-size: 14px;
+        }
+        a{
+            position: fixed;
+            right: 50px;
+            color: black;
+        }
+      </style>
+    </head>
+    <body>
+      <header>
+        <a href="index.html"><img src="assets/home.png" alt="" height="50"></a>
+        <h1>Contact Us</h1>
+      </header>
+      <main>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          
+          <input type="submit" value="Send Message">
+        </form>
+      </main>
+      <footer>
+        <p>&copy; 2023 JB's WEBSITE. All rights reserved.</p>
+      </footer>
+    </body>
+  </html>

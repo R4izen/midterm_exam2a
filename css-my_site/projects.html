@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Project</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.chat-container {
+  max-width: 400px;
+  margin: 40px auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.chat-body {
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.received {
+  background-color: #f1f0f0;
+}
+
+.sent {
+  background-color: #d3e8d3;
+  text-align: right;
+}
+
+.chat-footer {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+a{
+            position: fixed;
+            right: 50px;
+            color: black;
+        }
+
+  </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="assets/home.png" alt="" height="50"></a>
+    </header>
+  <div class="chat-container">
+    <div class="chat-header">
+      <h2>Chatbot</h2>
+    </div>
+    <div class="chat-body" id="chat-body">
+      <div class="message received">
+        <p>Hello! How can I assist you today?</p>
+      </div>
+    </div>
+    <div class="chat-footer">
+      <input type="text" id="user-input" placeholder="Type your message...">
+      <button id="send-button">Send</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  var sendButton = document.getElementById('send-button');
+  var userInput = document.getElementById('user-input');
+  var chatBody = document.getElementById('chat-body');
+
+  sendButton.addEventListener('click', function() {
+    var messageText = userInput.value.trim();
+    if (messageText !== '') {
+      appendMessage('sent', messageText);
+      userInput.value = '';
+      scrollToBottom();
+    }
+  });
+
+  function appendMessage(type, message) {
+    var messageContainer = document.createElement('div');
+    messageContainer.classList.add('message', type);
+    messageContainer.innerHTML = '<p>' + message + '</p>';
+    chatBody.appendChild(messageContainer);
+  }
+
+  function scrollToBottom() {
+    chatBody.scrollTop = chatBody.scrollHeight;
+  }
+});
+
+    </script>
+  </div>
+  <script src="script.js"></script>
+
+  
+  
+</body>
+</html>
